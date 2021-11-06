@@ -1,0 +1,27 @@
+#Menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  #Menu ul {
+    list-style-type: none; /*tira o marcador do item*/
+    background-color:  black;
+    text-align: right;
+  }
+  
+  #Menu ul li {
+    display: inline-block;
+  }
+  
+  #Menu ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: antiquewhite;
+  }
+  
+  #Menu ul li a:hover {
+    background-color: black;
+  }
