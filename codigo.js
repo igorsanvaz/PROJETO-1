@@ -3,6 +3,7 @@ function quadrado(){
     let lado = document.getElementById("ladoQuadrado").value
     let area1 = Math.pow(lado,2)
     console.log(area1)
+    
     return [area1]
  
 }
@@ -12,7 +13,6 @@ function circulo(){
     let raio = document.getElementById("raioCirculo").value
     let area = Math.PI * Math.pow(raio,2)
     console.log(area)
-
     return [area]
 }
 
