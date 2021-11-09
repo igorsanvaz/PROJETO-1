@@ -20,7 +20,7 @@ function circulo(){
 function triangulo(){
     let base = document.getElementById("ladoTriangulo").value
     let altura = document.getElementById("altTriangulo").value
-    let area = (base * altura)/2
+    let area = (base * altura) /2
     console.log(area)
 
     return[area]
@@ -31,7 +31,7 @@ function retangulo(){
     let altura = document.getElementById("altRetangulo").value
     let area = base * altura
     console.log(area)
-
+    
     return[area]
 }
 
@@ -39,8 +39,7 @@ function trapezio(){
     let baseMaior = document.getElementById("baseMaiorTrapezio").value
     let baseMenor = document.getElementById("baseMenorTrapezio").value
     let altura = document.getElementById("altTrapezio").value
-    let area = ((baseMaior+baseMenor)*altura)/2
+    let area = (parseInt(baseMaior) + parseInt(baseMenor) ) * altura / 2
     console.log(area)
-
     return[area]
 }
