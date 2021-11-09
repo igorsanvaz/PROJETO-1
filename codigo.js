@@ -1,9 +1,9 @@
 
 function quadrado(){
     let lado = document.getElementById("ladoQuadrado").value
-    let area = Math.pow(lado,2)
-    console.log(area)
-    return [area]
+    let area1 = Math.pow(lado,2)
+    console.log(area1)
+    return [area1]
  
 }
 
