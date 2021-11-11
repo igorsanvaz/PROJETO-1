@@ -54,7 +54,7 @@ input:hover{
 button{
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
     padding: 10px;
     border-radius: 7px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
@@ -115,22 +115,46 @@ p.pheader{
     width: 100%;
     padding: 10px 10px;
 }
-.quadro{
+.quadro1{
     background: rgb(255, 216, 143);
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
     width: 500px;
-    height: 300px;
+    height: 340px;
     margin: 10px 40px;
     align-items: center;
     border-radius: 5px;
     transition: all 0.6s;
 }
-.quadro p{
+.quadro2{
+    background: rgb(255, 216, 143);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 500px;
+    height: 370px;
+    margin: 10px 40px;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.quadro3{
+    background: rgb(255, 216, 143);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 500px;
+    height: 400px;
+    margin: 10px 40px;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.quadro1 p, .quadro2 p, .quadro3 p{
     margin-bottom: 20px;
 }
-.quadro:hover{
+.quadro1:hover, .quadro2:hover, .quadro3:hover{
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.6);
 }
 .infos{
@@ -164,7 +188,10 @@ p.pheader{
     width: 200px;
     height: 120px;
 }
-
+.tri_img{
+    width: 140px;
+    height: 140px;
+}
 
 /*=============================================================*/
 /*FOOTER*/
