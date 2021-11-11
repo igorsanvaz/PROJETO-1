@@ -204,6 +204,11 @@ footer{
 footer p{
     font-size: 20px;
 }
+footer img{
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
 footer::before, footer::after{
     content: "";
     display: block;
