@@ -1,14 +1,24 @@
 function quadrado() {
   let lado = document.getElementById("ladoQuadrado").value;
-  let area1 = Math.pow(lado, 2);
-  console.log(area1);
-  return [area1];
+  let area = Math.pow(lado, 2);
+  console.log(area); 
+  let apresentacao = document.getElementById("CalcQ")
+  let textoresp = document.createElement("p")
+  textoresp.append(area+ " m²")
+  apresentacao.appendChild (textoresp);
+  document.getElementById("ladoQuadrado").value = ""
+  return [area];
 }
 
 function circulo() {
   let raio = document.getElementById("raioCirculo").value;
   let area = Math.PI * Math.pow(raio, 2);
   console.log(area);
+  let apresentacao = document.getElementById("CalcC")
+  let textoresp = document.createElement("p")
+  textoresp.append(area+ " m²")
+  apresentacao.appendChild (textoresp);
+  document.getElementById("raioCirculo").value = ""
   return [area];
 }
 
@@ -17,6 +27,12 @@ function triangulo() {
   let altura = document.getElementById("altTriangulo").value;
   let area = (base * altura) / 2;
   console.log(area);
+  let apresentacao = document.getElementById("CalcT")
+  let textoresp = document.createElement("p")
+  textoresp.append(area+ " m²")
+  apresentacao.appendChild (textoresp);
+  document.getElementById("ladoTriangulo").value = ""
+  document.getElementById("altTriangulo").value = ""
   return [area];
 }
 
@@ -25,6 +41,12 @@ function retangulo() {
   let altura = document.getElementById("altRetangulo").value;
   let area = base * altura;
   console.log(area);
+  let apresentacao = document.getElementById("CalcR")
+  let textoresp = document.createElement("p")
+  textoresp.append(area+ " m²")
+  apresentacao.appendChild (textoresp);
+  document.getElementById("ladoRetangulo").value = ""
+  document.getElementById("altRetangulo").value = ""
   return [area];
 }
 
@@ -34,5 +56,12 @@ function trapezio() {
   let altura = document.getElementById("altTrapezio").value;
   let area = ((parseInt(baseMaior) + parseInt(baseMenor)) * altura) / 2;
   console.log(area);
+  let apresentacao = document.getElementById("CalcTr")
+  let textoresp = document.createElement("p")
+  textoresp.append(area+ " m²")
+  apresentacao.appendChild (textoresp);
+  document.getElementById("baseMaiorTrapezio").value= ""
+  document.getElementById("baseMenorTrapezio").value = ""
+  document.getElementById("altTrapezio").value = ""
   return [area];
 }

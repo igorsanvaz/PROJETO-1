@@ -24,7 +24,7 @@
         <!-- =============== Quadrado ===============-->
         <div class="quadro">
           <p>Quadrado</p>
-          <img class="square_img" src="img/quadrado.png" alt="">
+          <img class="square_img" src="img/quadrado.png" alt="quadrado">
           <div class="infos">
             <label for="ladoQuadrado">Lado:</label>
             <input id="ladoQuadrado" type="number" placeholder="Digite o valor do lado">
@@ -32,6 +32,9 @@
           <div class="button_style">
             <button class="btn-calc" type="button" onclick="quadrado()"><img class="calc_button" src="img/calc.png" alt="calculadora">Calcular</button>
           </div>
+          <div id="CalcQ">
+            <p>  </p>
+        </div>
         </div>
         <!-- =============== Círculo ===============-->
         <div class="quadro">
@@ -43,6 +46,9 @@
           <div class="button_style">
             <button class="btn-calc" type="button" onclick="circulo()"><img class="calc_button" src="img/calc.png" alt="calculadora">Calcular</button>
           </div>
+          <div id="CalcC">
+            <p>  </p>
+        </div>
         </div>
         <!-- =============== Triângulo =============-->
         <div class="quadro">
@@ -56,10 +62,14 @@
           <div class="button_style">
             <button class="btn-calc" type="button" onclick="triangulo()"><img class="calc_button" src="img/calc.png" alt="calculadora">Calcular</button>
           </div>
+          <div id="CalcT">
+            <p>  </p>
+        </div>
         </div>
         <!-- =============== Retângulo =============-->
         <div class="quadro">
           <p>Retângulo</p>
+          <img class="ret_img" src="img/retangulo.png" alt="retangulo">
           <div class="infos">
             <label for="ladoRetangulo">Lado:</label>
             <input id="ladoRetangulo" type="number" placeholder="Digite o valor do lado">
@@ -69,6 +79,9 @@
           <div class="button_style">
             <button class="btn-calc" type="button" onclick="retangulo()"><img class="calc_button" src="img/calc.png" alt="calculadora">Calcular</button>
           </div>
+          <div id="CalcR">
+            <p>  </p>
+        </div>
         </div>
         <!-- =============== Trapézio ==============-->
         <div class="quadro">
@@ -84,8 +97,17 @@
           <div class="button_style">
             <button class="btn-calc" type="button" onclick="trapezio()"><img class="calc_button" src="img/calc.png" alt="calculadora">Calcular</button>
           </div>
+          <div id="CalcTr">
+            <p>  </p>
+        </div>
         </div>
       </section>
+
+      <footer class="rodape">
+        <p>Site feito pelos alunos Igor Santos Vaz e Samuel Gomes Costa</p>
+        <p><strong>Professor: </strong> Eduardo Ribeiro Felipe</p>
+        <p>UNIFEI - Universidade Federal de Itajubá | Campus Itabira</p>
+      </footer>
     </section>
   </body>
 </html>
