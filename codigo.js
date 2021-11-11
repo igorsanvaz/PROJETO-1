@@ -13,13 +13,13 @@ function quadrado() {
 function circulo() {
   let raio = document.getElementById("raioCirculo").value;
   let area = Math.PI * Math.pow(raio, 2);
-  console.log(area);
+  console.log(area.toFixed(2));
   let apresentacao = document.getElementById("CalcC")
   let textoresp = document.createElement("p")
-  textoresp.append(area+ " m²")
+  textoresp.append(area.toFixed(2)+ " m²")
   apresentacao.appendChild (textoresp);
   document.getElementById("raioCirculo").value = ""
-  return [area];
+  return [area.toFixed(2)];
 }
 
 function triangulo() {
