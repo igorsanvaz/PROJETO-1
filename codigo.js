@@ -3,7 +3,7 @@ function quadrado() {
   let area = Math.pow(lado, 2)
   let apresentacao = document.getElementById("CalcQ")
   apresentacao.innerHTML = area + " m²"
-  document.getElementById("ladoQuadrado").value = null
+  document.getElementById("ladoQuadrado").value = ""
   return [area]
   
 }
@@ -13,7 +13,7 @@ function circulo() {
   let area = Math.PI * Math.pow(raio, 2);
   let apresentacao = document.getElementById("CalcC")
   apresentacao.innerHTML = area.toFixed(4) + " m²"
-  document.getElementById("raioCirculo").value = null
+  document.getElementById("raioCirculo").value = ""
   return [area]
 }
 
@@ -23,8 +23,8 @@ function triangulo() {
   let area = (base * altura) / 2;
   let apresentacao = document.getElementById("CalcT")
   apresentacao.innerHTML = area + " m²"
-  document.getElementById("ladoTriangulo").value =null
-  document.getElementById("altTriangulo").value = null
+  document.getElementById("ladoTriangulo").value = ""
+  document.getElementById("altTriangulo").value = ""
   return [area]
 }
 
@@ -34,8 +34,8 @@ function retangulo() {
   let area = base * altura;
   let apresentacao = document.getElementById("CalcR")
   apresentacao.innerHTML = area + " m²";
-  document.getElementById("ladoRetangulo").value = null
-  document.getElementById("altRetangulo").value = null
+  document.getElementById("ladoRetangulo").value = ""
+  document.getElementById("altRetangulo").value = ""
   return [area]
 }
 
@@ -46,8 +46,8 @@ function trapezio() {
   let area = ((parseInt(baseMaior) + parseInt(baseMenor)) * altura) / 2;
   let apresentacao = document.getElementById("CalcTr")
   apresentacao.innerHTML = area + " m²"
-  document.getElementById("baseMaiorTrapezio").value= null
-  document.getElementById("baseMenorTrapezio").value = null
-  document.getElementById("altTrapezio").value = null
+  document.getElementById("baseMaiorTrapezio").value= ""
+  document.getElementById("baseMenorTrapezio").value = ""
+  document.getElementById("altTrapezio").value = ""
   return [area]
 }
