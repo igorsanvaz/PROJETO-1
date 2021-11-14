@@ -21,7 +21,7 @@ img.background{
     margin: 0px auto;
     background-color: #F4F4F4;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.9);
-    padding: 10px;
+    padding: 10px 0px;
 }
 h1{
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -82,6 +82,11 @@ button:hover {
 button:active {
     transform: translateY(4px);
 }
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
 /*=============================================================*/
 /*CABEÇALHO*/
 .header{
@@ -104,6 +109,45 @@ img.logo{
 p.pheader{
     margin: 20px 10px;
 }
+/*=============================================================*/
+/*MENU*/
+.menu{
+    margin-top: 25px;
+    display: flex;
+    width: 1060px;
+    height: 40px;
+    padding: 5px 0px 5px 40px;
+    background: rgb(255, 216, 143);
+    margin-left: 0px;
+}
+li{
+    width: 110px;
+    text-align: center;
+    margin-right: 20px;
+    padding-top: 6px;
+    list-style: none;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.6s;
+    border: 0.5px solid gray;
+}
+.item_maior{
+    width: 200px;
+}
+li:hover{
+    background: rgb(252, 229, 187);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/*=============================================================*/
+/*PÁGINA DE EXPLICAÇÃO*/
+.explicacao{
+    margin: 15px 10px;
+}
+.explicacao p{
+    margin-bottom: 10px;
+}
+
+
 /*=============================================================*/
 /*FIGURAS*/
 .figuras{
