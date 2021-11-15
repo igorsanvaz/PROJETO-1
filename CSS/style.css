@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /*
               UNIFEI
 ECOI35.1 - DESENVOLVIMENTO DE SISTEMAS WEB - T01
@@ -7,10 +10,6 @@ CURSOS: ENGENHARIA DE COMPUTAÇÃO - ICT
 ALUNOS: IGOR SANTOS VAZ - 2020022850
         SAMUEL GOMES COSTA - 2021017012
 */
-
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /*ESTILOS PARA TODA A PÁGINA*/
 *{
