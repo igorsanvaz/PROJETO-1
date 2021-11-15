@@ -14,18 +14,22 @@ ALUNOS: IGOR SANTOS VAZ - 2020022850
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site com ultilidade de calcular área de figuras plamas em metros quadrados"
+    />
     <title>Figuras Planas</title>
 
     <link rel="stylesheet" href="CSS/style.css" />
-    <script  src="JS/codigo.js"></script>
+    <script src="JS/codigo.js"></script>
   </head>
   <body>
     <!-- =============== Cabecalho ==============-->
-    <img class="background" src="../img/background.jpg" alt="">
+    <img class="background" src="../img/background.jpg" alt="" />
     <section class="corpo">
       <section class="header">
         <div class="rowHeader">
-          <img class="logo" src="../img/unifei.png" alt="logo-unifei">
+          <img class="logo" src="../img/unifei.png" alt="logo-unifei" />
           <h2>Calculando Áreas de Figuras Planas</h2>
         </div>
         <ul class="menu">
@@ -39,86 +43,152 @@ ALUNOS: IGOR SANTOS VAZ - 2020022850
         <!-- =============== Quadrado ===============-->
         <div class="quadro1">
           <p>Quadrado</p>
-          <img class="square_img" src="../img/quadrado.png" alt="quadrado">
+          <img class="square_img" src="../img/quadrado.png" alt="quadrado" />
           <div class="infos">
             <label for="ladoQuadrado">Lado:</label>
-            <input id="ladoQuadrado" type="number" placeholder="Digite o valor do lado">
+            <input
+              id="ladoQuadrado"
+              type="number"
+              placeholder="Digite o valor do lado"
+            />
           </div>
           <div class="button_style">
-            <button class="btn-calc" type="button" onclick="quadrado()"><img class="calc_button" src="../img/calc.png" alt="calculadoracalculadora">Calcular</button>
+            <button class="btn-calc" type="button" onclick="quadrado()">
+              <img
+                class="calc_button"
+                src="../img/calc.png"
+                alt="calculadoracalculadora"
+              />Calcular
+            </button>
           </div>
-  
+
           <div id="CalcQ">
-            <p>  </p>
+            <p></p>
           </div>
         </div>
         <!-- =============== Círculo ===============-->
         <div class="quadro1">
           <p>Círculo</p>
-          <img class="square_img" src="../img/circulo1.png" alt="triangulo">
+          <img class="square_img" src="../img/circulo1.png" alt="triangulo" />
           <div class="infos">
             <label for="raioCirculo">Raio:</label>
-            <input id="raioCirculo" type="number" placeholder="Digite o valor do raio">
+            <input
+              id="raioCirculo"
+              type="number"
+              placeholder="Digite o valor do raio"
+            />
           </div>
           <div class="button_style">
-            <button class="btn-calc" type="button" onclick="circulo()"><img class="calc_button" src="../img/calc.png" alt="calculadora">Calcular</button>
+            <button class="btn-calc" type="button" onclick="circulo()">
+              <img
+                class="calc_button"
+                src="../img/calc.png"
+                alt="calculadora"
+              />Calcular
+            </button>
           </div>
           <div id="CalcC">
-            <p>  </p>
-        </div>
+            <p></p>
+          </div>
         </div>
         <!-- =============== Triângulo =============-->
         <div class="quadro2">
           <p>Triângulo</p>
-          <img class="tri_img" src="../img/triangulo.png" alt="triangulo">
+          <img class="tri_img" src="../img/triangulo.png" alt="triangulo" />
           <div class="infos">
             <label for="ladoTriangulo">Lado:</label>
-            <input id="ladoTriangulo" type="number" placeholder="Digite o valor do lado">
+            <input
+              id="ladoTriangulo"
+              type="number"
+              placeholder="Digite o valor do lado"
+            />
             <label for="altTriangulo">Altura:</label>
-            <input id="altTriangulo" type="number" placeholder="Digite o valor da altura">
+            <input
+              id="altTriangulo"
+              type="number"
+              placeholder="Digite o valor da altura"
+            />
           </div>
           <div class="button_style">
-            <button class="btn-calc" type="button" onclick="triangulo()"><img class="calc_button" src="../img/calc.png" alt="calculadora">Calcular</button>
+            <button class="btn-calc" type="button" onclick="triangulo()">
+              <img
+                class="calc_button"
+                src="../img/calc.png"
+                alt="calculadora"
+              />Calcular
+            </button>
           </div>
           <div id="CalcT">
-            <p>  </p>
-        </div>
+            <p></p>
+          </div>
         </div>
         <!-- =============== Retângulo =============-->
         <div class="quadro2">
           <p>Retângulo</p>
-          <img class="ret_img" src="../img/retangulo.png" alt="retangulo">
+          <img class="ret_img" src="../img/retangulo.png" alt="retangulo" />
           <div class="infos">
             <label for="ladoRetangulo">Lado:</label>
-            <input id="ladoRetangulo" type="number" placeholder="Digite o valor do lado">
+            <input
+              id="ladoRetangulo"
+              type="number"
+              placeholder="Digite o valor do lado"
+            />
             <label for="altRetangulo">Altura:</label>
-            <input id="altRetangulo" type="number" placeholder="Digite o valor da altura">
+            <input
+              id="altRetangulo"
+              type="number"
+              placeholder="Digite o valor da altura"
+            />
           </div>
           <div class="button_style">
-            <button class="btn-calc" type="button" onclick="retangulo()"><img class="calc_button" src="../img/calc.png" alt="calculadora">Calcular</button>
+            <button class="btn-calc" type="button" onclick="retangulo()">
+              <img
+                class="calc_button"
+                src="../img/calc.png"
+                alt="calculadora"
+              />Calcular
+            </button>
           </div>
           <div id="CalcR">
-            <p>  </p>
-        </div>
+            <p></p>
+          </div>
         </div>
         <!-- =============== Trapézio ==============-->
         <div class="quadro3">
           <p>Trapézio</p>
-          <img class="ret_img" src="../img/trapezio.png" alt="trapezio">
+          <img class="ret_img" src="../img/trapezio.png" alt="trapezio" />
           <div class="infos_trap">
             <label for="baseMenorTrapezio">Base Menor:</label>
-            <input id="baseMenorTrapezio" type="number" placeholder="Digite a base menor do trapézio">
+            <input
+              id="baseMenorTrapezio"
+              type="number"
+              placeholder="Digite a base menor do trapézio"
+            />
             <label for="baseMaiorTrapezio">Base Maior:</label>
-            <input id="baseMaiorTrapezio" type="number" placeholder="Digite a base maior do trapézio">
+            <input
+              id="baseMaiorTrapezio"
+              type="number"
+              placeholder="Digite a base maior do trapézio"
+            />
             <label for="altTrapezio">Altura:</label>
-            <input id="altTrapezio" type="number" placeholder="Digite o valor da altura">
+            <input
+              id="altTrapezio"
+              type="number"
+              placeholder="Digite o valor da altura"
+            />
           </div>
           <div class="button_style">
-            <button class="btn-calc" type="button" onclick="trapezio()"><img class="calc_button" src="../img/calc.png" alt="calculadora">Calcular</button>
+            <button class="btn-calc" type="button" onclick="trapezio()">
+              <img
+                class="calc_button"
+                src="../img/calc.png"
+                alt="calculadora"
+              />Calcular
+            </button>
           </div>
           <div id="CalcTr">
-            <p>  </p>
-        </div>
+            <p></p>
+          </div>
         </div>
       </section>
       <!-- =============== Footer ==============-->
@@ -126,7 +196,7 @@ ALUNOS: IGOR SANTOS VAZ - 2020022850
         <p>Site feito pelos alunos Igor Santos Vaz e Samuel Gomes Costa</p>
         <p><strong>Professor: </strong> Eduardo Ribeiro Felipe</p>
         <p>UNIFEI - Universidade Federal de Itajubá | Campus Itabira</p>
-        <img class="logo1" src="../img/unifei.png" alt="logo-unifei">
+        <img class="logo1" src="../img/unifei.png" alt="logo-unifei" />
       </footer>
     </section>
   </body>
