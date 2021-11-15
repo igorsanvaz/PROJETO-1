@@ -25,6 +25,7 @@ img.background{
     width: 100%;
     height: 280%;
 }
+
 .corpo{
     position: relative;
     max-width: 1100px;
@@ -33,11 +34,33 @@ img.background{
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.9);
     padding: 10px 0px;
 }
+@media (max-width: 1100px) {
+    .corpo{
+        margin: 0 5px;
+        box-shadow: none;
+    }
+    img.background{
+        display: none;
+    }
+}
+   
 h1{
     font-family: 'Mochiy Pop P One', sans-serif;
     text-decoration: none;
     font-size: 30px;
     text-align: center;
+}
+@media (max-width: 1100px) {
+    h1{
+        font-size: 25px;
+    }
+}
+h2{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 p{
     /*font-family: 'Dongle', sans-serif;*/
@@ -61,6 +84,11 @@ input{
 }
 input:hover{
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 1100px) {
+    input{
+        margin-bottom: 10px;
+    }
 }
 button{
     align-items: center;
@@ -96,6 +124,10 @@ a{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    width: 100%;
+}
+a:active{
+    color: red;
 }
 /*=============================================================*/
 /*CABEÇALHO*/
@@ -116,24 +148,38 @@ img.logo{
     width: 60px;
     height: 60px;
 }
+@media (max-width: 1100px) {
+    img.logo{
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+    }
+}
 p.pheader{
     margin: 20px 10px;
 }
 /*=============================================================*/
 /*MENU*/
 .menu{
-    margin-top: 25px;
+    margin: 25px auto;
     display: flex;
-    width: 1060px;
+    width: 100%;
     height: 40px;
-    padding: 5px 0px 5px 40px;
+    padding: 5px 0px;
     background: rgb(255, 216, 143);
     margin-left: 0px;
+}
+@media (max-width: 1100px) {
+    .menu{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 li{
     width: 110px;
     text-align: center;
-    margin-right: 20px;
+    margin: 0px 20px;
     padding-top: 6px;
     list-style: none;
     border-radius: 2px;
@@ -149,15 +195,71 @@ li:hover{
     box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 /*=============================================================*/
-/*PÁGINA DE EXPLICAÇÃO*/
-.explicacao{
+/*PÁGINA DE EXPLICAÇÃO | SOBRE*/
+.explicacao, .mockup{
     margin: 15px 10px;
 }
 .explicacao p{
-    margin-bottom: 10px;
+    margin: 20px 0px;
+}
+/*MOCKUP*/
+.imagens_mockup{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.imagens_mockup img{
+    border: 1px solid gray;
 }
 
+.div_mockup1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.p_mockup{
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 20px;
+}
 
+.mockup_coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.mockup2{
+    width: 100%;
+}
+.mockup3{
+    width: 100%;
+    margin-top: 30px;
+}
+@media (max-width: 1100px){
+    .explicacao p, .mockup p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 720px){
+    .imagens_mockup{
+        width: 100%;
+        flex-direction: column;
+    }
+    .div_mockup1{
+        width: 100%;
+        margin: 0 auto 10px auto;
+        
+    }
+    .mockup3{
+        margin-top: 10px;
+    }
+}
 /*=============================================================*/
 /*FIGURAS*/
 .figuras{
@@ -169,6 +271,11 @@ li:hover{
     align-items: center;
     width: 100%;
     padding: 10px 10px;
+}
+@media (max-width: 1100px) {
+    .figuras{
+        width: 80%;
+    }
 }
 .quadro1{
     background: rgb(255, 216, 143);
@@ -215,6 +322,17 @@ li:hover{
 .quadro1:hover, .quadro2:hover, .quadro3:hover{
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 1100px) {
+    .quadro1, .quadro2, .quadro3{
+        width: 300px;
+    }
+    .quadro3{
+        height: 420px;
+    }
+
+}
+
 .infos{
     display: flex;
     flex-wrap: wrap;
@@ -237,6 +355,7 @@ li:hover{
     padding: 5px;
     margin: 10px 0; 
 }
+
 /*TAMANHO DAS IMAGENS*/
 .square_img{
     margin-top: 10px;
@@ -252,6 +371,23 @@ li:hover{
     margin-top: 10px;
     width: 140px;
     height: 140px;
+}
+
+@media (max-width: 1250px) {
+    .square_img{
+        width: 90px;
+        height: 90px;
+    }
+    .ret_img{
+        margin: 5px 87px 0px 87px;
+        width: 120px;
+        height: 90px;
+    }
+    .tri_img{
+        margin: 0px 96px;
+        width: 100px;
+        height: 100px;   
+    }
 }
 
 /*LOCAL DAS RESPOSTAS*/
@@ -289,4 +425,13 @@ footer::before, footer::after{
     height: 1px;
     background-color: black;
     margin: 10px 0;
+}
+@media (max-width: 1100px) {
+    footer p{
+        font-size: 10px;
+    }
+    footer img{
+        width: 40px;
+        height: 40px;
+    }
 }
