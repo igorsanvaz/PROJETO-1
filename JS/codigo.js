@@ -22,7 +22,7 @@ function circulo() {
   let raio = document.getElementById("raioCirculo").value
   let area = Math.PI * Math.pow(raio, 2);
   let apresentacao = document.getElementById("CalcC")
-  apresentacao.innerHTML = area.toFixed(4) + " m²"
+  apresentacao.innerHTML = area.toFixed(3) + " m²"
   document.getElementById("raioCirculo").value = ""
   return [area]
 }
